@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="instruction-message" id="instructionMessage">
+        <p>Drag and drop the makeup tools from the panel onto the center image to apply makeup. The makeup should be applied in sequence!</p>
+    </div>
+    <div class="content">
+        <img src="images/no_makeup.png" alt="Centered Image" class="center-image" id="centerImage" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h1></h1>
+        <p></p>
+    </div>
+    <div class="panel">
+        <h2>Makeup Tools</h2>
+        <div class="image-container">
+            <img src="images/foundation.png" alt="Foundation" draggable="true" ondragstart="drag(event)" id="foundation" title="Foundation">
+            <img src="images/shadow_n_highlight.png" alt="Shadow and Highlight" draggable="true" ondragstart="drag(event)" id="shadow_n_highlight" title="Shadow and Highlight">
+            <img src="images/eyeshadow.png" alt="Eyeshadow" draggable="true" ondragstart="drag(event)" id="eyeshadow" title="Eyeshadow">
+            <img src="images/eyeliner.png" alt="Eyeliner" draggable="true" ondragstart="drag(event)" id="eyeliner" title="Eyeliner">
+            <img src="images/eyesbrow.png" alt="Eyebrow" draggable="true" ondragstart="drag(event)" id="eyesbrow" title="Eyebrow">
+            <img src="images/blush.png" alt="Blush" draggable="true" ondragstart="drag(event)" id="blush" title="Blush">
+            <img src="images/lipstick.png" alt="Lipstick" draggable="true" ondragstart="drag(event)" id="lipstick" title="Lipstick">
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
